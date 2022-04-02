@@ -32,4 +32,4 @@ jobs:
           make flake8
       - name: unit tests
         run: |
-          make tests
+          pytest -xv --cov=hmg --cov-report term-missing tests/
